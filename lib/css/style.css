@@ -1,0 +1,140 @@
+#top{
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background:
+    linear-gradient(
+        rgba(255,255,255,0.3),
+        rgba(255,255,255,0.3)
+        ),
+    url("/assets/switch.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%, 100%;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    z-index: -5;
+    justify-content: center;
+    background-position: center top;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+        text-shadow:
+            -2px -2px 0 rgb(85, 82, 82),
+            2px -2px 0 rgb(85, 82, 82),
+            -2px 2px 0 rgb(85, 82, 82),
+            2px 2px 0 rgb(85, 82, 82);
+}
+
+@media(min-width:1200px){
+    #top{
+        font-size: 150px;
+        width: 100%;
+    }
+    .video-container iframe{
+        height: 12000px;
+        flex-flow: row, nowrap;
+    }
+}
+
+@media(min-width:992px){
+    #top{
+        font-size: 125px;
+        width: 100%;
+    }
+    .video-container iframe{
+        height: 800px;
+        flex-flow: row, nowrap;
+    }
+}
+
+@media(min-width:768px){
+    #top{
+        font-size: 100px;
+        width: 100%;
+    }
+    .video-container{
+        height: 500px;
+        flex-flow: column, wrap;
+    }
+}
+
+@media(min-width: 576px){
+    #top{
+        font-size: 50px;
+        width: 100%;
+    }
+    .video-container iframe{ 
+        height:400px;
+        flex-flow: column, wrap;
+    }
+}
+
+.video-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+
+h1 {
+    height: 100%;
+    width: 100%;
+}
+
+/* .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0px;
+    height: 0;
+    overflow: hidden;
+} */
+/* .video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    transform: translate(-50%, -50%);
+}  */
+
+.text{
+    background: white;
+    height: 10vh;
+    font-family: 'Roboto', sans-serif;
+    z-index: 400;
+}
+
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700px;
+}
+
+/* 
+.btn {
+    background-color:white;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: blue;
+    padding: 16px 45px;s
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 20px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: rgba(0,0,0,0);
+    border-radius: 5px; 
+    border: 2px, solid, white;
+    color:white
+} */
